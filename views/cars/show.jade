@@ -1,0 +1,14 @@
+h1 Car Details
+
+p Make is #{car.make}
+p Model is #{car.model}
+p Year is #{car.year}
+
+p
+  a(href="/cars/#{car._id}/edit") Edit this Car
+
+form(name="delete-car" method="POST" action="/cars/#{car._id}?_method=DELETE")
+  input(type="submit" value="Delete car")
+
+p
+  a(href="/cars") List of all Cars

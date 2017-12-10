@@ -1,0 +1,14 @@
+h1 Edit Car Page
+
+form(name="edit-car" method="POST" action="/cars/#{car._id}?_method=PATCH")
+  p
+    label(for="make") Make
+    input(type="text" name="make" value="#{car.make}")
+  p
+    label(for="model") Model
+    input(type="text" name="model" value="#{car.model}")
+  p
+    label(for="year") Year
+    input(type="text" name="year" value="#{car.year}")
+  p
+    input(type="submit" value="Update Car")
